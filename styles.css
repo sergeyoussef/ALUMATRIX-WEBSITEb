@@ -10209,3 +10209,66 @@ body.rtl .whatsapp-float {
   max-width: 210px !important;
   font-size: 0.85rem !important;
 }
+.lightbox,
+.gallery-lightbox,
+.modal-gallery {
+  direction: ltr;
+}
+
+.lightbox .prev,
+.gallery-lightbox .prev,
+.modal-gallery .prev {
+  left: 8%;
+  right: auto;
+}
+
+.lightbox .next,
+.gallery-lightbox .next,
+.modal-gallery .next {
+  right: 8%;
+  left: auto;
+}
+.lightbox-arrow,
+.lightbox-prev,
+.lightbox-next {
+  direction: ltr;
+}
+
+.lightbox-prev {
+  left: 8%;
+  right: auto;
+}
+
+.lightbox-next {
+  right: 8%;
+  left: auto;
+}
+/* Fix Arabic gallery arrows */
+html[dir="rtl"] .gallery-modal,
+html[dir="rtl"] .gallery-box,
+html[dir="rtl"] .gallery-arrow {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+}
+
+html[dir="rtl"] .gallery-prev {
+  left: 28px !important;
+  right: auto !important;
+}
+
+html[dir="rtl"] .gallery-next {
+  right: 28px !important;
+  left: auto !important;
+}
+
+@media (max-width: 1180px) {
+  html[dir="rtl"] .gallery-prev {
+    left: 12px !important;
+    right: auto !important;
+  }
+
+  html[dir="rtl"] .gallery-next {
+    right: 12px !important;
+    left: auto !important;
+  }
+}
