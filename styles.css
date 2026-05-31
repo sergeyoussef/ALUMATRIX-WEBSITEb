@@ -10272,3 +10272,9 @@ html[dir="rtl"] .gallery-next {
     left: auto !important;
   }
 }
+/* Fix Arabic hero title line spacing */
+html[dir="rtl"] .hero-title,
+html[dir="rtl"] .hero h1,
+html[dir="rtl"] .hero-content h1 {
+  line-height: 1.25 !important;
+}
